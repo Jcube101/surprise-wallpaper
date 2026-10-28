@@ -249,7 +249,6 @@ wallpapers/
   Curated/                  # NASA APOD / Pexels (local, not in git)
   logs/                     # journal, index, costs, rotator.log
   rotator/                  # Python package
-  prompts/                  # legacy tasteful templates (historical)
   docs/                     # public samples only (not the daily library)
     portfolio.md
     gtm-cloudflare.png

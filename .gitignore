@@ -11,8 +11,8 @@ Grok_Daily/**
 Curated/**
 !Curated/.gitkeep
 
-# Local seed-pack prompt logs. Not part of the tool.
-prompts/USED_BATCH_*.md
+# Legacy prompt notes. The live pipeline does not read this folder.
+prompts/
 
 # Python
 __pycache__/

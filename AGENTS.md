@@ -35,7 +35,6 @@ Grok_Daily/                  # dated primaries (local; not in git)
   _rejected/                 # disliked gens
 Curated/                     # APOD / Pexels (local; not in git)
 logs/                        # journal, costs, rotator.log
-prompts/                     # legacy tasteful templates (historical)
 docs/                        # public samples only (not the daily library)
 ```
 
@@ -46,7 +45,7 @@ docs/                        # public samples only (not the daily library)
 3. Keep GTM content **center-safe** for desktop icons.  
 4. GTM subjects: real companies; conglomerates → one segment; **not** wallpaper/home-decor brands.  
 5. First gen of day uses calendar theme; **`--force` / desktop New** advances to the **next** theme after today's last creative gen (not a redo of the same theme).  
-6. Never commit `.env`, API keys, or the daily wallpaper libraries. `Grok_Daily/` and `Curated/` stay local; git keeps only each folder's `.gitkeep`. The two files in `docs/` are the public samples.  
+6. Never commit `.env`, API keys, or the daily wallpaper libraries. `Grok_Daily/` and `Curated/` stay local; git keeps only each folder's `.gitkeep`. The two files in `docs/` are the public samples. `prompts/` is local legacy notes; git ignores the whole folder, and the pipeline does not read it.  
 7. Extend modules; don’t rewrite architecture casually.  
 8. **No cyberpunk by default** (neon megacity, holographic rain, acid noir, etc.) on literary/painting — only if the user explicitly asks. Prefer painterly, classical, natural light, historical, quiet modern.  
 9. **Literary images:** apply a **famous painter's style only** (brushwork/palette/light). Do **not** reimagine a famous painting *as* the literary climax — the book scene stays the subject.  
