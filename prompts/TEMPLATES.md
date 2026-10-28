@@ -60,7 +60,7 @@ Pale sage hills, pearl-grey sky, thin gold horizon ribbon, impressionist, 16:9, 
 **Pearl horizon**  
 Abstract sea/sky pearlescent gradients, minimal, 16:9, no text.
 
-Full historical lists: see `USED_BATCH_*.md` and older repo revisions. Prefer the live three-theme pipeline for daily habit.
+Exact prompts from those seed packs stay in local `USED_BATCH_*.md` notes and are not in git. Prefer the live three-theme pipeline for daily habit.
 
 ---
 

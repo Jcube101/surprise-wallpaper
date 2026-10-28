@@ -11,6 +11,9 @@ Grok_Daily/**
 Curated/**
 !Curated/.gitkeep
 
+# Local seed-pack prompt logs. Not part of the tool.
+prompts/USED_BATCH_*.md
+
 # Python
 __pycache__/
 *.py[cod]

@@ -13,8 +13,7 @@ The **live** daily system no longer depends on freeform tasteful fantasy templat
 | File | Status |
 |------|--------|
 | `TEMPLATES.md` | Legacy tasteful + fantastical prompt library (optional reference) |
-| `USED_BATCH_2026-07-15.md` | Seed fantasy pack prompts (images now in `Grok_Daily/archive/`) |
-| `USED_BATCH_2026-07-15_tasteful.md` | Tasteful batch prompts (archived images) |
+| `USED_BATCH_*.md` | Local only. Gitignored. Exact prompts from the July 2026 seed packs. |
 
 ## Daily habit (current)
 
