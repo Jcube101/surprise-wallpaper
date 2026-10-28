@@ -34,7 +34,7 @@
 
 ## Public portfolio move
 
-Done. Live tree: `C:\Users\jobjo\Github\Wallpapers` (not inside OneDrive). Public remote: `Jcube101/grok-wallpaper` (`origin`). The deleted private repo `Jcube101/Wallpapers` must not be recreated or used as a remote. `C:\Users\jobjo\projects\Wallpapers` is gone; do not recreate it or copy anything back.
+Done. Live tree: `C:\Users\jobjo\Github\Wallpapers` (not inside OneDrive). Public remote: `Jcube101/surprise-wallpaper` (`origin`). The deleted private repo `Jcube101/Wallpapers` must not be recreated or used as a remote. `C:\Users\jobjo\projects\Wallpapers` is gone; do not recreate it or copy anything back.
 
 The public README shows the two samples. They are copies under `docs/` (`gtm-cloudflare.png`, `painting-milkmaid.jpg`), not files from `Grok_Daily/`.
 
@@ -47,7 +47,7 @@ The public README shows the two samples. They are copies under `docs/` (`gtm-clo
 - [x] 7. Confirm what Git tracks. Commit code, tests, installers, `.env.example`, `config.json.example`, and docs. Keep `.gitkeep` only for `Grok_Daily/` and `Curated/`. Leave out `.env`, `config.json`, `.venv`, `logs/`, `.last_set.txt`, and every generated image, including `archive/` and `_rejected/`. Committed on public `main` with the portfolio frame.
 - [x] 8. Make the docs usable by someone else. Keep IST, the three themes, no Bing, Pillow GTM maps, and Imagine for literary and painting. Replace the personal `projects\wallpapers` path in the README. Keep `AGENTS.md` as session notes, including the local-only image rule.
 - [x] 9. Add a short portfolio frame: what the tool does, one GTM screenshot and one painting, under `docs/`, not in the daily library. MIT is already named in `pyproject.toml`. README shows both samples.
-- [x] 10. Create the new public repo from that clean tree and push `main` once. Do not reuse the private remote. Public repo is `Jcube101/grok-wallpaper`.
+- [x] 10. Create the new public repo from that clean tree and push `main` once. Do not reuse the private remote. Public repo is `Jcube101/surprise-wallpaper`.
 
 If the GitHub folder is inside OneDrive, the repo can live there. `.venv` stays ignored so OneDrive does not sync the environment.
 
