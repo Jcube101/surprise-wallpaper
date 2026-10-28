@@ -1,0 +1,15 @@
+{
+  "grok_daily_dir": "Grok_Daily",
+  "curated_dir": "Curated",
+  "state_file": ".last_set.txt",
+  "log_file": "logs/rotator.log",
+  "timezone": "Asia/Kolkata",
+  "prefer_primary": true,
+  "show_toast": true,
+  "toast_title": "Grok Surprise Wallpaper",
+  "image_extensions": [".jpg", ".jpeg", ".png", ".bmp", ".webp", ".jfif"],
+  "nasa_api_key": "DEMO_KEY",
+  "pexels_api_key": "",
+  "apod_count": 1,
+  "apod_save_to": "Curated"
+}
