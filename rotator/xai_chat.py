@@ -21,7 +21,9 @@ from rotator.xai_image import resolve_xai_api_key
 log = logging.getLogger(__name__)
 
 XAI_CHAT_URL = "https://api.x.ai/v1/chat/completions"
-DEFAULT_CHAT_MODEL = "grok-4-1-fast-reasoning"
+DEFAULT_CHAT_MODEL = "grok-4.3"
+# grok-4.3's own default is low. Pin it so a later default cannot raise the bill.
+DEFAULT_REASONING_EFFORT = "low"
 USER_AGENT = "GrokSurpriseWallpaperRotator/2.0"
 
 
@@ -53,6 +55,10 @@ def chat_completion(
         "messages": messages,
         "temperature": temperature,
     }
+    # Retired slugs such as grok-4-1-fast-reasoning redirect here at low effort.
+    # Other models reject this field.
+    if model == "grok-4.3" or model.startswith("grok-4.3-"):
+        body["reasoning_effort"] = DEFAULT_REASONING_EFFORT
     data = json.dumps(body).encode("utf-8")
     req = urllib.request.Request(
         XAI_CHAT_URL,

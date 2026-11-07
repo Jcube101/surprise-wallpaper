@@ -11,11 +11,12 @@ from pathlib import Path
 
 log = logging.getLogger(__name__)
 
-# Rough defaults (USD). Override via env without code changes.
-# Update when xAI pricing changes: https://docs.x.ai/
-_DEFAULT_CHAT_IN_PER_M = 3.0
-_DEFAULT_CHAT_OUT_PER_M = 15.0
-_DEFAULT_IMAGE_PER = 0.07
+# List prices (USD) for the models this project calls.
+# grok-4.3 below 200k prompt tokens, and grok-imagine-image.
+# Checked 2026-11-08: https://docs.x.ai/developers/pricing
+_DEFAULT_CHAT_IN_PER_M = 1.25
+_DEFAULT_CHAT_OUT_PER_M = 2.50
+_DEFAULT_IMAGE_PER = 0.02
 
 
 def _fenv(name: str, default: float) -> float:

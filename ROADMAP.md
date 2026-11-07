@@ -31,6 +31,7 @@
 - [x] Scheduled tasks run `pythonw.exe` so no console flashes  
 - [x] Painting: clothe famous nudes in Imagine prompts; skip gore; one moderation retry  
 - [x] `wallpaper about --dialog` thumbnail card (pythonw, no cmd.exe)  
+- [x] Cost rates match the 2026-11-08 xAI list: `grok-4.3` at $1.25 / $2.50 per million tokens, `grok-imagine-image` at $0.02. Recheck https://docs.x.ai/developers/pricing when the model changes, and recompute stored `est_usd` from token counts.
 
 ## Public portfolio move
 
@@ -60,7 +61,6 @@ If the GitHub folder is inside OneDrive, the repo can live there. `.venv` stays 
 | Log failed Imagine calls in `xai_costs.jsonl` (`ok=false`) | API still bills; JSONL currently only records 200s |
 | Optional Pillow 16:9 normalize for odd drops | Phone screenshots |
 | Unsplash secondary curated | Optional alongside Pexels |
-| Align cost rates with live xAI pricing page | Document check cadence |
 
 ## Later
 
@@ -77,5 +77,5 @@ If the GitHub folder is inside OneDrive, the repo can live there. `.venv` stays 
 |------|-----|
 | Bing Wallpaper | Contradicts product |
 | Imagine-rendered GTM text maps | Unreadable labels |
-| Mandatory cloud account | Offline-first set path |Lwt
+| Mandatory cloud account | Offline-first set path |
 | Deleting user art without archive | Prefer `_rejected/` / `archive/` |

@@ -113,7 +113,13 @@ python wallpaper.py restore --file Grok_Daily\_rejected\some.jpg
 python wallpaper.py costs
 ```
 
-Estimates use `XAI_PRICE_*` env defaults (adjust to your xAI plan). See `logs/xai_costs.md`.
+Estimates use the list prices in `rotator/costs.py`. Override them with `XAI_PRICE_*`.
+
+- Chat input: $1.25 per million tokens
+- Chat output: $2.50 per million tokens
+- Image: $0.02
+
+Those match `grok-4.3` for prompts under 200k tokens, and `grok-imagine-image`, as of 2026-11-08. Recheck [xAI pricing](https://docs.x.ai/developers/pricing) when the model changes. The summary is `logs/xai_costs.md`.
 
 ---
 
@@ -198,10 +204,13 @@ Paths, timezone (`Asia/Kolkata`), toast, image extensions. Copy from `config.jso
 
 ```text
 XAI_API_KEY=...
-XAI_CHAT_MODEL=grok-4-1-fast-reasoning    # or your Grok 4.x id
+XAI_CHAT_MODEL=grok-4.3                      # planner; low reasoning effort
 XAI_IMAGE_MODEL=grok-imagine-image
 NASA_API_KEY=...
-# optional: PEXELS_API_KEY, XAI_PRICE_CHAT_*_PER_MTOK, XAI_PRICE_IMAGE_USD
+# optional: PEXELS_API_KEY
+# XAI_PRICE_CHAT_INPUT_PER_MTOK=1.25
+# XAI_PRICE_CHAT_OUTPUT_PER_MTOK=2.50
+# XAI_PRICE_IMAGE_USD=0.02
 ```
 
 See `.env.example`.

@@ -100,7 +100,9 @@ Imagine costs are not in `xai_costs.jsonl` (chat plan still is).
 
 ## Secrets
 
-`.env`: `XAI_API_KEY`, `XAI_CHAT_MODEL`, `XAI_IMAGE_MODEL`, `NASA_API_KEY`, optional `XAI_PRICE_*`, `PEXELS_API_KEY`.
+`.env`: `XAI_API_KEY`, `XAI_CHAT_MODEL=grok-4.3` (request `reasoning_effort=low`), `XAI_IMAGE_MODEL=grok-imagine-image`, `NASA_API_KEY`, optional `XAI_PRICE_*`, `PEXELS_API_KEY`.
+
+Cost defaults in `rotator/costs.py`, checked 2026-11-08: chat $1.25 / $2.50 per million tokens, image $0.02. Source: https://docs.x.ai/developers/pricing. Update those defaults when that page changes. `wallpaper costs` sums stored `est_usd`, so recompute those rows from token counts after a rate change.
 
 ## Desktop menu
 

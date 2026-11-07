@@ -180,13 +180,15 @@ Interactive user principal required for SPI and for seeing the overlay window. A
 | Key | Use |
 |-----|-----|
 | `XAI_API_KEY` | Chat + images |
-| `XAI_CHAT_MODEL` | Default e.g. `grok-4-1-fast-reasoning` |
-| `XAI_IMAGE_MODEL` | Default e.g. `grok-imagine-image` |
+| `XAI_CHAT_MODEL` | Default `grok-4.3` (low reasoning effort) |
+| `XAI_IMAGE_MODEL` | Default `grok-imagine-image` |
 | `NASA_API_KEY` | APOD (else DEMO_KEY) |
 | `PEXELS_API_KEY` | Optional |
-| `XAI_PRICE_CHAT_INPUT_PER_MTOK` | Cost estimate |
-| `XAI_PRICE_CHAT_OUTPUT_PER_MTOK` | Cost estimate |
-| `XAI_PRICE_IMAGE_USD` | Cost estimate per image |
+| `XAI_PRICE_CHAT_INPUT_PER_MTOK` | Default `1.25` (`grok-4.3`, under 200k tokens) |
+| `XAI_PRICE_CHAT_OUTPUT_PER_MTOK` | Default `2.50` |
+| `XAI_PRICE_IMAGE_USD` | Default `0.02` per `grok-imagine-image` |
+
+Checked 2026-11-08 against [xAI pricing](https://docs.x.ai/developers/pricing). `wallpaper costs` sums the `est_usd` stored on each event, so a rate change needs those rows recomputed from the token counts.
 
 ## 8. Logs
 

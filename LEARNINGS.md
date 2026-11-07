@@ -40,7 +40,9 @@ Edge-heavy layouts fight the user’s icon columns.
 
 xAI chat + image adds up quietly.
 
-**Learning:** Log every call to JSONL + markdown summary with **editable price env vars**. Journal carries per-run estimate.
+**Learning:** Log every call to JSONL + markdown summary with **editable price env vars**. Journal carries the estimate from that run.
+
+Defaults as of 2026-11-08 (`rotator/costs.py`): `grok-4.3` at $1.25 input and $2.50 output per million tokens, `grok-imagine-image` at $0.02. Chat requests pin `reasoning_effort` to `low`. Recheck https://docs.x.ai/developers/pricing when the model changes. `wallpaper costs` sums stored `est_usd`, so a rate change needs those rows recomputed from token counts.
 
 ## 8. Task Scheduler Python path
 
